@@ -34,13 +34,13 @@
   --lineHeight12: 16px;
   --fontSize14: 14px;
   --lineHeight14: 16px;
-  --fontSize4: 24px;
+  --fontSize24: 24px;
   --lineHeight24: 32px;
 }
 
 .card {
   background-color: var(--colorGrass);
-  position: absolute;
+  /*position: absolute;*/
   width: 300px;
   height: 400px;
   left: 30px;
@@ -74,7 +74,7 @@
   border-radius: 8px;
 }
 
-.pokemon {
+.card__pokemonIdentity__pictures {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -86,4 +86,28 @@
   left: var(--imgPokemonLeft);
   top: var(--imgPokemonTop);
   z-index: 1;
+}
+
+.card__pokemonIdentity {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 0px;
+  gap: 16px;
+}
+
+.card__pokemonIdentity h1 {
+  font-weight: 700;
+  font-size: var(--fontSize24);
+  line-height: var(--lineHeight24);
+  color: var(--colorWhite);
+}
+
+.card__pokemonIdentity h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--colorWhite);
 }

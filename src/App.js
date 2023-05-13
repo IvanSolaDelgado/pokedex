@@ -2,6 +2,7 @@ import "./ui/_styles/reset.css";
 import "./ui/_styles/reboot.css";
 import "./styles.css";
 import { ReactComponent as Pokemon } from "./ui/_images/pokemon/bulbasur.svg";
+//import bulbasur from "./ui/_images/pokemon/bulbasur.svg";
 
 <style>
   @import
@@ -12,14 +13,12 @@ export default function App() {
   return (
     <div className="App">
       <div className="card">
-        <section className="pokemonIdentity">
-          <header>
-            <h1 className="pokemonName">Bulbasur</h1>
-            <h2 className="pokemonIndex">#001</h2>
-            <div className="pokemon">
-              <Pokemon />
-            </div>
-          </header>
+        <section className="card__pokemonIdentity">
+          <h1 className="card__pokemonIdentity__name">Bulbasur</h1>
+          <h2 className="card__pokemonIdentity__index">#001</h2>
+          <div className="card__pokemonIdentity__pictures">
+            <Pokemon />
+          </div>
         </section>
         <section className="pokemonDescription">
           <artcile className="pokemonStats">
