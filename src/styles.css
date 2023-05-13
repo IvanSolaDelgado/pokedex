@@ -55,7 +55,7 @@
   --imgPokemonTop: 56px;
 }
 
-.descriptionCard {
+.pokemonDescription {
   /* Auto layout */
   display: flex;
   flex-direction: column;
