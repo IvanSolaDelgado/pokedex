@@ -1,4 +1,89 @@
 .App {
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
+}
+
+:root {
+  --colorPoison: #a43e9e;
+  --colorBug: #a7b723;
+  --colorDark: #75574c;
+  --colorDragon: #7037ff;
+  --colorElectric: #f9cf30;
+  --colorFairy: #e69eac;
+  --colorFighting: #c12239;
+  --colorFire: #f57d31;
+  --colorFlying: #a891ec;
+  --colorGhost: #70559b;
+  --colorGrass: #74cb48;
+  --colorGround: #dec16b;
+  --colorIce: #9ad6df;
+  --colorNormal: #aaa67f;
+  --colorPsychic: #fb5584;
+  --colorRock: #b69e31;
+  --colorSteel: #b7b9d0;
+  --colorWater: #6493eb;
+  --colorDarkGray: #212121;
+  --colorWhite: #ffffff;
+  --colorBackground: #f7f7f7;
+  --colorLightGray: #e0e0e0;
+  --colorMediumGray: #666666;
+
+  --fontSize10: 10px;
+  --lineHeight10: 16px;
+  --fontSize12: 12px;
+  --lineHeight12: 16px;
+  --fontSize14: 14px;
+  --lineHeight14: 16px;
+  --fontSize4: 24px;
+  --lineHeight24: 32px;
+}
+
+.card {
+  background-color: var(--colorGrass);
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  left: 30px;
+  top: 244px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+
+  --imgPokemonHeight: 150px;
+  --imgPokemonWidth: 150px;
+  --imgPokemonPosition: absolute;
+  --imgPokemonLeft: 76px;
+  --imgPokemonTop: 56px;
+}
+
+.descriptionCard {
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 56px 20px 0px;
+  gap: 16px;
+
+  position: absolute;
+  width: 290px;
+  height: 240px;
+  left: 5px;
+  top: 155px;
+
+  /* White */
+  background: var(--colorWhite);
+  border-radius: 8px;
+}
+
+.pokemon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: var(--imgPokemonPosition);
+  height: var(--imgPokemonHeight);
+  width: var(--imgPokemonWidth);
+  left: var(--imgPokemonLeft);
+  top: var(--imgPokemonTop);
+  z-index: 1;
 }
