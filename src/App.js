@@ -38,7 +38,7 @@ export default function App() {
               <Chip type="Grass" />
               <Chip type="Poison" />
             </div>
-            <span className="card__about">card__about</span>
+            <span className="card__about">About</span>
             <div className="card__measurments">
               <div className="card__weight">
                 <img className="card__weightIcon" src="#"></img>
