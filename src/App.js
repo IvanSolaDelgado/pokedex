@@ -26,32 +26,32 @@ export default function App() {
     <div className="App">
       <div className="card">
         <section className="card__pokemonIdentity">
-          <h1 className="card__pokemonIdentity__name">Bulbasur</h1>
-          <h2 className="card__pokemonIdentity__index">#001</h2>
-          <div className="card__pokemonIdentity__pictures">
+          <h1 className="card__name">Bulbasur</h1>
+          <h2 className="card__index">#001</h2>
+          <div className="card__pictures">
             <Pokemon />
           </div>
         </section>
         <section className="card__pokemonDescription">
-          <artcile className="card__pokemonDescription__stats">
-            <div className="card__pokemonDescription__types">
+          <artcile className="card__stats">
+            <div className="card__types">
               <Chip type="Grass" />
               <Chip type="Poison" />
             </div>
-            <span className="about">About</span>
-            <div className="pokemonMeasurments">
-              <div className="pokemonWeigth">
-                <img className="iconWeight" src="#"></img>
-                <span className="pokemonWeight">6.9 kg</span>
-                <span className="pokemonTitleWeight">Weight</span>
+            <span className="card__about">card__about</span>
+            <div className="card__measurments">
+              <div className="card__weight">
+                <img className="card__weightIcon" src="#"></img>
+                <span className="card__weightValue">6.9 kg</span>
+                <span className="card__weightTitle">Weight</span>
               </div>
-              <div className="pokemonHeight">
-                <img className="iconHeight" src="#"></img>
-                <span className="pokemonHeight">0.7 m</span>
-                <span className="pokemonTitleHeight">Height</span>
+              <div className="card__height">
+                <img className="card__heightIcon" src="#"></img>
+                <span className="card__heightValue">0.7 m</span>
+                <span className="card__heightTitle">Height</span>
               </div>
             </div>
-            <footer className="description">
+            <footer className="card__description">
               There is a plant seed on its back right from the day this Pokémon
               is born.
             </footer>

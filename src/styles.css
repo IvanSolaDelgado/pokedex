@@ -48,7 +48,7 @@
   border-radius: 12px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 
-  --imgPokemonHeight: 150px;
+  --imgcard__heightValue: 150px;
   --imgPokemonWidth: 150px;
   --imgPokemonPosition: absolute;
   --imgPokemonLeft: 76px;
@@ -74,14 +74,14 @@
   border-radius: 8px;
 }
 
-.card__pokemonIdentity__pictures {
+.card__pictures {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
 
   position: var(--imgPokemonPosition);
-  height: var(--imgPokemonHeight);
+  height: var(--imgcard__heightValue);
   width: var(--imgPokemonWidth);
   left: var(--imgPokemonLeft);
   top: var(--imgPokemonTop);
