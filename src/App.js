@@ -8,8 +8,20 @@ import { ReactComponent as Pokemon } from "./ui/_images/pokemon/bulbasur.svg";
   @import
   url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 </style>;
+
+const Chip = ({ type }) => {
+  const styles = {
+    backgroundColor: `var(--color${type})`,
+  };
+
+  return (
+    <span className="chip" style={styles}>
+      {type}
+    </span>
+  );
+};
+
 export default function App() {
-  //console.log("IMAGEN: ", pokemon2);
   return (
     <div className="App">
       <div className="card">
@@ -20,11 +32,11 @@ export default function App() {
             <Pokemon />
           </div>
         </section>
-        <section className="pokemonDescription">
-          <artcile className="pokemonStats">
-            <div className="pokemonTypes">
-              <span className="grassType">Grass</span>
-              <span className="poisonType">Poison</span>
+        <section className="card__pokemonDescription">
+          <artcile className="card__pokemonDescription__stats">
+            <div className="card__pokemonDescription__types">
+              <Chip type="Grass" />
+              <Chip type="Poison" />
             </div>
             <span className="about">About</span>
             <div className="pokemonMeasurments">
