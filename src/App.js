@@ -44,18 +44,22 @@ export default function App() {
 
             <div className="card__measurments">
               <div className="card__weight">
-                <div className="prueba">
+                <div className="iconWeight">
                   <img className="card__weightIcon" src={bascula}></img>
-                  <span className="card__weightValue">6.9 kg</span>
+                  <span className="card__weightValue measurments">6.9 kg</span>
                 </div>
-                <span className="card__weightTitle">Weight</span>
+                <span className="card__weightTitle measurmentsTitle">
+                  Weight
+                </span>
               </div>
               <div className="card__height">
-                <div className="prueba2">
+                <div className="iconHeight">
                   <img className="card__heightIcon" src={regla}></img>
-                  <span className="card__heightValue">0.7 m</span>
+                  <span className="card__heightValue measurments">0.7 m</span>
                 </div>
-                <span className="card__heightTitle">Height</span>
+                <span className="card__heightTitle measurmentsTitle">
+                  Height
+                </span>
               </div>
             </div>
             <footer className="card__description">
