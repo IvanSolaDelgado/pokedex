@@ -111,23 +111,33 @@
 .card__measurments {
   display: flex;
   position: absolute;
-  top: 120px;
-  left: 75px;
+  top: 130px;
+  left: 60px;
 }
 .card__weight {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding-right: 10px;
+  padding-right: 20px;
+  border-right: var(--colorLightGray) solid 1px;
 }
 .card__height {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 .card__description {
   position: absolute;
   top: 190px;
   left: 5px;
+}
+.measurments {
+  font-size: 20px;
+  padding-left: 10px;
+}
+.measurmentsTitle {
+  color: var(--colorMediumGray);
+  font-size: 16px;
+  padding-top: 10px;
 }
