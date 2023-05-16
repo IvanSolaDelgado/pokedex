@@ -39,42 +39,58 @@
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
   background-color: var(--colorGrass);
-  border-radius: 12px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  /*position: absolute;*/
   width: 300px;
   height: 400px;
+  left: 30px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+
+  --imgcard__heightValue: 150px;
+  --imgPokemonWidth: 150px;
+  --imgPokemonPosition: absolute;
+  --imgPokemonLeft: 76px;
+  --imgPokemonTop: 56px;
 }
-.card__pokemonIdentity {
-  font-weight: 700;
+
+.card__pictures {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
-  flex-wrap: wrap;
+  padding: 0px;
+
+  position: var(--imgPokemonPosition);
+  height: var(--imgcard__heightValue);
+  width: var(--imgPokemonWidth);
+  left: var(--imgPokemonLeft);
+  top: var(--imgPokemonTop);
+  z-index: 1;
+}
+
+.card__pokemonIdentity {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   justify-content: space-around;
   padding: 0px;
   gap: 16px;
-  color: var(--colorWhite);
 }
+
 .card__pokemonIdentity h1 {
-  display: flex;
+  font-weight: 700;
   font-size: var(--fontSize24);
   line-height: var(--lineHeight24);
+  color: var(--colorWhite);
 }
 
 .card__pokemonIdentity h2 {
-  display: flex;
+  font-weight: 700;
   font-size: 16px;
   line-height: 32px;
+  color: var(--colorWhite);
 }
-.card__pictures {
-  position: absolute;
-  top: -100px;
-  padding: 0px;
-  left: 76px;
-}
-
 .card__name,
 .card__index {
   margin-top: 24px;
@@ -82,14 +98,17 @@
 
 .card__pokemonDescription {
   display: flex;
-  position: relative;
   flex-direction: column;
+  align-items: flex-start;
+  padding: 56px 20px 0px;
+  gap: 16px;
+
+  position: relative;
   width: 290px;
   height: 240px;
   left: 5px;
-  top: 100px;
-  padding: 56px 20px 0px;
-  gap: 16px;
+  top: 155px;
+
   background: var(--colorWhite);
   border-radius: 8px;
 }
@@ -102,32 +121,5 @@
 }
 
 .card__about {
-  font-weight: 700;
-  position: absolute;
-  top: 90px;
-  left: 130px;
   color: var(--colorGrass);
-}
-.card__measurments {
-  display: flex;
-  position: absolute;
-  top: 120px;
-  left: 75px;
-}
-.card__weight {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding-right: 10px;
-}
-.card__height {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding-left: 10px;
-}
-.card__description {
-  position: absolute;
-  top: 190px;
-  left: 5px;
 }

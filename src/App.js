@@ -1,8 +1,10 @@
 import "./ui/_styles/reset.css";
 import "./ui/_styles/reboot.css";
 import "./styles.css";
-import { ReactComponent as Pokemon } from "./ui/_images/pokemon/bulbasur.svg";
-//import bulbasur from "./ui/_images/pokemon/bulbasur.svg";
+//import { ReactComponent as Pokemon } from "./ui/_images/pokemon/bulbasur.svg";
+import bulbasur from "./ui/_images/pokemon/bulbasur.svg";
+import bascula from "./ui/_images/iconos/bascula.svg";
+import regla from "./ui/_images/iconos/regla.svg";
 
 <style>
   @import
@@ -24,30 +26,35 @@ const Chip = ({ type }) => {
 export default function App() {
   return (
     <div className="App">
-      <div className="card">
-        <section className="card__pokemonIdentity">
+      <section className="card">
+        <div className="card__pokemonIdentity">
           <h1 className="card__name">Bulbasur</h1>
           <h2 className="card__index">#001</h2>
-          <div className="card__pictures">
-            <Pokemon />
-          </div>
-        </section>
-        <section className="card__pokemonDescription">
-          <artcile className="card__stats">
+        </div>
+
+        <div className="card__pokemonDescription">
+          <img src={bulbasur} className="card__pictures" />
+
+          <article className="card__stats">
             <div className="card__types">
               <Chip type="Grass" />
               <Chip type="Poison" />
             </div>
             <span className="card__about">About</span>
+
             <div className="card__measurments">
               <div className="card__weight">
-                <img className="card__weightIcon" src="#"></img>
-                <span className="card__weightValue">6.9 kg</span>
+                <div className="prueba">
+                  <img className="card__weightIcon" src={bascula}></img>
+                  <span className="card__weightValue">6.9 kg</span>
+                </div>
                 <span className="card__weightTitle">Weight</span>
               </div>
               <div className="card__height">
-                <img className="card__heightIcon" src="#"></img>
-                <span className="card__heightValue">0.7 m</span>
+                <div className="prueba2">
+                  <img className="card__heightIcon" src={regla}></img>
+                  <span className="card__heightValue">0.7 m</span>
+                </div>
                 <span className="card__heightTitle">Height</span>
               </div>
             </div>
@@ -55,9 +62,9 @@ export default function App() {
               There is a plant seed on its back right from the day this Pokémon
               is born.
             </footer>
-          </artcile>
-        </section>
-      </div>
+          </article>
+        </div>
+      </section>
     </div>
   );
 }
