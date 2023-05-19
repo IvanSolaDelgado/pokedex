@@ -11,16 +11,18 @@ import regla from "./ui/_images/iconos/regla.svg";
   url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 </style>;
 
-const pokemon = {
-  id: "001",
-  name: "Bulbasaur",
-  height: 4.3,
-  weight: 6.5,
-  types: ["grass", "poison"],
-  src: "https://...",
-  description:
-    "There is a plant seed on its back right from the day this Pokémon is born.",
-};
+const pokemon = [
+  {
+    id: "001",
+    name: "Bulbasaur",
+    height: 4.3,
+    weight: 6.5,
+    types: ["grass", "poison"],
+    src: "https://...",
+    description:
+      "There is a plant seed on its back right from the day this Pokémon is born.",
+  },
+];
 
 const Chip = ({ type }) => {
   const styles = {
@@ -34,7 +36,7 @@ const Chip = ({ type }) => {
   );
 };
 
-export default function Pokemon() {
+export default function Pokemon({ pokemon }) {
   const pokemonWeight = pokemon.weight + " kg";
   const pokemonHeight = pokemon.height + " m";
   const pokemonTypes = pokemon.types.map((type) => {
