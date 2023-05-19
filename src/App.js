@@ -2,6 +2,7 @@ import "./ui/_styles/reset.css";
 import "./ui/_styles/reboot.css";
 import "./styles.css";
 import Pokemon from "./Pokemon";
+import axios from "axios";
 
 <style>
   @import
@@ -19,22 +20,19 @@ const pokemons = [
     description:
       "There is a plant seed on its back right from the day this Pokémon is born.",
   },
-  {
-    id: "002",
-    name: "Bulbasaur",
-    height: 4.3,
-    weight: 6.5,
-    types: ["grass", "poison"],
-    src: "https://...",
-    description:
-      "There is a plant seed on its back right from the day this Pokémon is born.",
-  },
 ];
 
 // axios
 axios.get("https://pokeapi.co/api/v2/pokemon?limit=10").then(
   (response) => {
-    console.log(response.data); // response.data ya es un JSON
+    axios.get(response.data.results[1].url).then(
+      (response) => {
+        console.log(response); // response.data ya es un JSON
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
   },
   (error) => {
     console.log(error);
