@@ -34,7 +34,7 @@ const Chip = ({ type }) => {
   );
 };
 
-export default function App() {
+export default function Pokemon() {
   const pokemonWeight = pokemon.weight + " kg";
   const pokemonHeight = pokemon.height + " m";
   const pokemonTypes = pokemon.types.map((type) => {
