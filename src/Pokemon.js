@@ -16,6 +16,7 @@ const Chip = ({ type }) => {
 };
 
 export default function Pokemon({ pokemon }) {
+  console.log(pokemon);
   const pokemonWeight = pokemon.weight + " kg";
   const pokemonHeight = pokemon.height + " m";
   const pokemonTypes = pokemon.types.map((type) => {
@@ -31,7 +32,7 @@ export default function Pokemon({ pokemon }) {
         </div>
 
         <div className="card__pokemonDescription">
-          <img src={bulbasur} className="card__pictures" />
+          <img src={pokemon.src} className="card__pictures" />
 
           <article className="card__stats">
             <div className="card__types">{pokemonTypes}</div>
