@@ -22,6 +22,7 @@ export default function Pokemon({ pokemon }) {
   const pokemonTypes = pokemon.types.map((type) => {
     return <Chip type={type} />;
   });
+
   const pokemonDescription = pokemon.description;
   return (
     <div className="App">
