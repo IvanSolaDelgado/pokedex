@@ -4,29 +4,29 @@
 }
 
 :root {
-  --colorPoison: #a43e9e;
-  --colorBug: #a7b723;
-  --colorDark: #75574c;
-  --colorDragon: #7037ff;
-  --colorElectric: #f9cf30;
-  --colorFairy: #e69eac;
-  --colorFighting: #c12239;
-  --colorFire: #f57d31;
-  --colorFlying: #a891ec;
-  --colorGhost: #70559b;
-  --colorGrass: #74cb48;
-  --colorGround: #dec16b;
-  --colorIce: #9ad6df;
-  --colorNormal: #aaa67f;
-  --colorPsychic: #fb5584;
-  --colorRock: #b69e31;
-  --colorSteel: #b7b9d0;
-  --colorWater: #6493eb;
-  --colorDarkGray: #212121;
-  --colorWhite: #ffffff;
-  --colorBackground: #f7f7f7;
-  --colorLightGray: #e0e0e0;
-  --colorMediumGray: #666666;
+  --color-poison: #a43e9e;
+  --color-bug: #a7b723;
+  --color-dark: #75574c;
+  --color-dragon: #7037ff;
+  --color-electric: #f9cf30;
+  --color-fairy: #e69eac;
+  --color-fighting: #c12239;
+  --color-fire: #f57d31;
+  --color-flying: #a891ec;
+  --color-ghost: #70559b;
+  --color-grass: #74cb48;
+  --color-ground: #dec16b;
+  --color-ice: #9ad6df;
+  --color-normal: #aaa67f;
+  --color-psychic: #fb5584;
+  --color-rock: #b69e31;
+  --color-steel: #b7b9d0;
+  --color-water: #6493eb;
+  --color-darkgray: #212121;
+  --color-white: #ffffff;
+  --color-background: #f7f7f7;
+  --color-lightgray: #e0e0e0;
+  --color-mediumgray: #666666;
 
   --fontSize10: 10px;
   --lineHeight10: 16px;
@@ -41,7 +41,7 @@
 .card {
   display: flex;
   flex-direction: column;
-  background-color: var(--colorGrass);
+  background-color: var(--color-grass);
   border-radius: 12px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   width: 300px;
@@ -55,7 +55,7 @@
   justify-content: space-around;
   padding: 0px;
   gap: 16px;
-  color: var(--colorWhite);
+  color: var(--color-white);
 }
 .card__pokemonIdentity h1 {
   display: flex;
@@ -90,12 +90,12 @@
   top: 100px;
   padding: 56px 20px 0px;
   gap: 16px;
-  background: var(--colorWhite);
+  background: var(--color-white);
   border-radius: 8px;
 }
 
 .chip {
-  color: var(--colorWhite);
+  color: var(--color-white);
   border-radius: 10px;
   padding: 4px 8px 2px 8px;
   margin-left: 16px;
@@ -106,7 +106,7 @@
   position: absolute;
   top: 90px;
   left: 130px;
-  color: var(--colorGrass);
+  color: var(--color-grass);
 }
 .card__measurments {
   display: flex;
@@ -119,7 +119,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   padding-right: 20px;
-  border-right: var(--colorLightGray) solid 1px;
+  border-right: var(--color-lightgray) solid 1px;
 }
 .card__height {
   display: flex;
@@ -137,7 +137,7 @@
   padding-left: 10px;
 }
 .measurmentsTitle {
-  color: var(--colorMediumGray);
+  color: var(--color-mediumgray);
   font-size: 16px;
   padding-top: 10px;
 }
